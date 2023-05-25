@@ -1,7 +1,7 @@
-import Profile from './Profile';
-import userprofile from '../user.json';
+import { Profile } from './task1/Profile';
+import userprofile from 'data/user.json';
 
-export default function App() {
+export const App = () => {
   return (
     <div>
       <Profile
@@ -15,4 +15,4 @@ export default function App() {
       />
     </div>
   );
-}
+};
