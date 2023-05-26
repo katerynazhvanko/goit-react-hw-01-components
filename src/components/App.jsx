@@ -1,5 +1,9 @@
-import { Profile } from './task1/Profile';
+import { Profile } from './Profil/Profile';
+import { Statistics } from './Statistic/Statistics';
+import { FriendList } from './FriendList/FriendList';
 import userprofile from 'data/user.json';
+import datajson from 'data/data.json';
+import friends from 'data/friends.json';
 
 export const App = () => {
   return (
@@ -13,6 +17,8 @@ export const App = () => {
         views={userprofile.stats.views}
         likes={userprofile.stats.likes}
       />
+      <Statistics title="Upload stats" stats={datajson} />
+      <FriendList friends={friends} />
     </div>
   );
 };
